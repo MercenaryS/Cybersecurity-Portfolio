@@ -1,1 +1,8 @@
-What's New 
+What's New.
+
+11-8-26
+- Weather Change in my city made me sick.
+- Spent time documenting P1.1 project.
+- Designed the Lab Arch in Draw.io
+- learned a little bit about git and GitHub: how to create repositories and how to push/commit/pull and clone.
+- End of the Day

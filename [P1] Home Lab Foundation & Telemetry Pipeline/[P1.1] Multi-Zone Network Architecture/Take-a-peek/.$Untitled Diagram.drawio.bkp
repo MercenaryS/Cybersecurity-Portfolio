@@ -1,0 +1,89 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="i5lxA-yE9sL9-xKgLWB2">
+    <mxGraphModel dx="2402" dy="2339" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-35" connectable="0" parent="1" style="group;textShadow=1;" value="" vertex="1">
+          <mxGeometry height="890" width="1224.5" x="810" y="-510" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-25" parent="AnnhL2ERNSNO_ysirxPC-35" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontStyle=3;fontSize=24;fontFamily=Times New Roman;textShadow=1;" value="Internal Lan" vertex="1">
+          <mxGeometry height="240" width="790" x="434.5" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-23" parent="AnnhL2ERNSNO_ysirxPC-35" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=22;fontStyle=3;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="DMZ" vertex="1">
+          <mxGeometry height="240" width="190" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-1" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=middle;verticalAlign=middle;align=right;outlineConnect=0;shape=mxgraph.cisco.switches.layer_2_remote_switch;fontFamily=Times New Roman;fontSize=19;fontStyle=3;rounded=0;labelPosition=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Switch-01&lt;div&gt;(10.10.20.1)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="101" x="44.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-34" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-2" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=top;verticalAlign=bottom;align=right;outlineConnect=0;shape=mxgraph.cisco.switches.layer_2_remote_switch;fontFamily=Times New Roman;fontSize=18;fontStyle=3;rounded=0;labelPosition=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Switch-02&lt;div&gt;(10.10.10.1)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="101" x="624.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-3" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.security.firewall;fontFamily=Times New Roman;fontSize=20;fontStyle=3;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="PfSensse-Firewall&lt;div&gt;(DHCP IP)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="28.999999999999996" x="275.5" y="317" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-29" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-7" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.servers.file_server;rounded=0;fontFamily=Times New Roman;fontSize=14;fontStyle=3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Log-Server&lt;div&gt;SIEM-Engine&lt;/div&gt;&lt;div&gt;(10.10.10.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="63" x="643.5" y="716.89" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-6" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.servers.fileserver;rounded=0;fontSize=14;fontStyle=3;fontFamily=Times New Roman;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Web Server&lt;div&gt;(10.10.20.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="92" width="62" x="64" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-8" parent="AnnhL2ERNSNO_ysirxPC-35" style="html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.computers_and_peripherals.pc;rounded=0;fontFamily=Times New Roman;fontStyle=3;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Win-01-Workstation&lt;div&gt;(10.10.10.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="88" x="785.5" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-9" parent="AnnhL2ERNSNO_ysirxPC-35" style="html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.computers_and_peripherals.pc;rounded=0;fontSize=14;fontStyle=3;fontFamily=Times New Roman;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Win-02-Workstation&lt;div&gt;(10.10.10.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="89" x="914.5" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-11" parent="AnnhL2ERNSNO_ysirxPC-35" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.domain_controller;rounded=0;fontFamily=Times New Roman;fontStyle=3;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="ADDS/DNS&lt;div&gt;Win-server2019&lt;/div&gt;&lt;div&gt;(10.10.10.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87.78" width="63.2" x="524.5" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-14" parent="AnnhL2ERNSNO_ysirxPC-35" style="html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.cisco.computers_and_peripherals.terminal;rounded=0;fontStyle=3;fontFamily=Times New Roman;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="Linux-Workstation&lt;div&gt;(10.10.10.x)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="71" x="1064.5" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-5" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=middle;verticalAlign=middle;align=center;outlineConnect=0;shape=mxgraph.cisco.storage.cloud;fontFamily=Times New Roman;autosizeText=0;fontSize=19;labelPosition=center;fontColor=light-dark(#000000,#000000);fontStyle=3;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" value="INTERNET" vertex="1">
+          <mxGeometry height="106" width="187" x="196.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-16" parent="AnnhL2ERNSNO_ysirxPC-35" style="strokeColor=#ffffff;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeWidth=2;verticalLabelPosition=middle;verticalAlign=middle;align=left;outlineConnect=0;shape=mxgraph.cisco.routers.10700;rounded=0;fontFamily=Times New Roman;fontSize=18;fontStyle=3;labelBackgroundColor=none;labelPosition=right;textShadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Router" vertex="1">
+          <mxGeometry height="53" width="78" x="251" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-17" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-18" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;flowAnimation=1;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-19" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;strokeWidth=2;dashed=1;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-24" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-26" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-28" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-31" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="829.5" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-32" edge="1" parent="AnnhL2ERNSNO_ysirxPC-35" source="AnnhL2ERNSNO_ysirxPC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;dashed=1;strokeWidth=2;flowAnimation=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;textShadow=1;" target="AnnhL2ERNSNO_ysirxPC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnnhL2ERNSNO_ysirxPC-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=40;fontFamily=Times New Roman;fontStyle=1;convertToSvg=0;svgWhiteSpace=wrap;labelBackgroundColor=none;textShadow=1;" value="Home-lab&lt;div&gt;Architecture&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="360" x="300" y="-450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
