@@ -1,4 +1,4 @@
-After Successful completion of [P1.1] move to next important steps:
+After Successful completion of [P1.1] moving to next important steps:
     Establishing Enterprise AD & DNS Baseline to provide core identity, authentication and name resolution services across lab environment.
 
 This lab does cover some of the ADDS skills and group policy skills as one will navigate through specific settings and policies which will grant basic understanding of what,How and Why something is done by group policy and using AD in a real evironment.

@@ -6,3 +6,9 @@ What's New.
 - Designed the Lab Arch in Draw.io
 - learned a little bit about git and GitHub: how to create repositories and how to push/commit/pull and clone.
 - End of the Day
+
+11-10-2026
+- Previous 2 day have been bad for as I was sick
+- But here I am Documented P1.2 today 
+- was able to use git bash correctly now.
+- End of Day.
