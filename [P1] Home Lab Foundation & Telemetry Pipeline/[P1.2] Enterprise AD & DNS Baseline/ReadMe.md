@@ -23,4 +23,9 @@ Refer:
     "Group Policy Management Console (GPMC) & Settings-2.png"
     "Group Policy Management Console (GPMC) & Settings-3.png"
 
-Visit Steps Document to have little clue of I implemented it.
+In addition to this I also installed and configured Apache2 as a web server inside DMZ. Configuration include:
+    dual-port virtual hosting supporting HTTP (port 80) with an automatic 301 redirect to HTTPS (port 443).
+    Securing using custom SSL/TLS certificates located in `/etc/ssl/cyberlab/` with modern TLS protocols and HSTS enabled.
+    Establishing dedicated log paths (`cyberlab-access.log` and `cyberlab-error.log`) for clean isolation of virtual host traffic.
+
+Read Steps document to gain insight of how it was done.
