@@ -1,4 +1,4 @@
- configuring Enterprise Active Directory & DNS Baseline on Windows Server (Windows-DC at x.x.x.x)
+ # configuring Enterprise Active Directory & DNS Baseline on Windows Server (Windows-DC at x.x.x.x)
    
     1.Configure Static IP Address and DNS Settings:
     Before installing Active Directory, the Domain Controller must have a static IP address and point to itself for DNS resolution.
@@ -59,10 +59,11 @@ Verification: The server will automatically restart upon completion. After reboo
             
 Verification: Open PowerShell on the server and run nslookup [Domain.name] and nslookup [x.x.x.x] to confirm both forward and reverse resolution respond successfully.
 
-# Use different file name as per prefernece for [cyberlab] and for related files.
 
-Deploying and Securing an Apache Web Server on Ubuntu
+
+# Deploying and Securing an Apache Web Server on Ubuntu.
 This walks through setting up a production-ready Apache web server on Ubuntu, including enabling necessary security modules, generating self-signed SSL certificates, configuring virtual hosts with automatic HTTP-to-HTTPS redirection, and establishing custom log file locations.
+#Use different file name as per prefernece for [cyberlab] and for related files.
  
     Step 1: Install Apache
     Update your package index and install the Apache web server package.
