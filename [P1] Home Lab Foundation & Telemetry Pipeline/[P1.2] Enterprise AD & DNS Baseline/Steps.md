@@ -117,35 +117,36 @@ Verification: Run ls -l /etc/ssl/cyberlab/ to confirm both web.crt and web.key e
 Paste the following configuration template (adjusting paths and domain names as needed):
 
 Apache
-<VirtualHost *:80>
-    ServerName web.cyberlab.local
-    DocumentRoot /var/www/cyberlab
+    <VirtualHost *:80>
+        ServerName web.cyberlab.local
+        DocumentRoot /var/www/cyberlab
 
-    # Automatically redirect all HTTP traffic to HTTPS
-    RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
-</VirtualHost>
+        # Automatically redirect all HTTP traffic to HTTPS
+        RewriteEngine On
+        RewriteCond %{HTTPS} off
+     RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+        </VirtualHost>
 
-<VirtualHost *:443>
-    ServerName web.cyberlab.local
-    DocumentRoot /var/www/cyberlab
+    <VirtualHost *:443>
+        ServerName web.cyberlab.local
+        DocumentRoot /var/www/cyberlab
 
-    SSLEngine on
-    SSLCertificateFile /etc/ssl/cyberlab/web.crt
-    SSLCertificateKeyFile /etc/ssl/cyberlab/web.key
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/cyberlab/web.crt
+        SSLCertificateKeyFile /etc/ssl/cyberlab/web.key
 
-    # Modern SSL/TLS Security Hardening
-    SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
-    SSLCipherSuite HIGH:!aNULL:!MD5
+        # Modern SSL/TLS Security Hardening
+        SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+        SSLCipherSuite HIGH:!aNULL:!MD5
 
-    # Security Headers
-    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+        # Security Headers
+        Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 
-    # Custom Log Paths
-    CustomLog /var/log/apache2/cyberlab-access.log combined
-    ErrorLog /var/log/apache2/cyberlab-error.log
-</VirtualHost>
+        # Custom Log Paths
+        CustomLog /var/log/apache2/cyberlab-access.log combined
+        ErrorLog /var/log/apache2/cyberlab-error.log
+    </VirtualHost>
+    
     Step 6: Enable the Site and Restart Apache
     Disable the default Apache welcome page, enable your new configuration site, test for syntax errors, and restart the service.
 
