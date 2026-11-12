@@ -114,9 +114,8 @@ Verification: Run ls -l /etc/ssl/cyberlab/ to confirm both web.crt and web.key e
         Bash
         sudo nano /etc/apache2/sites-available/cyberlab.conf
 
-Paste the following configuration template (adjusting paths and domain names as needed):
+    Paste the following configuration template (adjusting paths and domain names as needed):
 
-Apache
     <VirtualHost *:80>
         ServerName web.cyberlab.local
         DocumentRoot /var/www/cyberlab
@@ -146,7 +145,7 @@ Apache
         CustomLog /var/log/apache2/cyberlab-access.log combined
         ErrorLog /var/log/apache2/cyberlab-error.log
     </VirtualHost>
-    
+
     Step 6: Enable the Site and Restart Apache
     Disable the default Apache welcome page, enable your new configuration site, test for syntax errors, and restart the service.
 
