@@ -155,3 +155,36 @@ Verification: Run ls -l /etc/ssl/cyberlab/ to confirm both web.crt and web.key e
         sudo apache2ctl configtest
         sudo systemctl restart apache2
 Verification: Ensure the configuration test returns Syntax OK and sudo systemctl status apache2 shows the service running cleanly.  
+
+# To allow HTTP (port 80) and HTTPS (port 443) traffic through the UFW firewall for your Apache web server, follow these steps:
+
+    Step 1: Check Available Application Profiles
+    Verify that Apache has automatically registered its firewall profiles with UFW during installation:
+
+    Bash
+    sudo ufw app list
+
+Verification: You should see Apache, Apache Full, and Apache Secure listed in the output.
+
+    Step 2: Allow HTTP and HTTPS Traffic
+    Apply the Apache Full rule, which opens both port 80 (HTTP) and port 443 (HTTPS) in a single command:
+
+    Bash
+    sudo ufw allow 'Apache Full'
+    (Alternatively, if you prefer opening ports manually, you can run sudo ufw allow 80/tcp and sudo ufw allow 443/tcp).
+
+Verification: Run sudo ufw status to confirm the rule was added successfully.
+
+    Step 3: Enable and Verify UFW Status
+    If UFW is not yet active on your system, enable the firewall:
+
+    Bash
+    sudo ufw enable
+    Then, view the verbose status to confirm your rules are active:
+
+    Bash
+    sudo ufw status verbose
+
+Verification: The output should show Apache Full (or ports 80 and 443) listed as ALLOW from Anywhere.
+
+    Also Verify from one of the Internal Lan system that hosted website is reachable.
