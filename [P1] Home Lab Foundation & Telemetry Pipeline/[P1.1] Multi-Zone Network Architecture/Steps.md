@@ -13,7 +13,7 @@ Verification: Navigate to Status > Interfaces in the pfSense menu and confirm th
     2.Implement Stateful Zone Isolation and Lateral Movement Blocks.
         Create strict firewall rules to ensure hosts in the DMZ subnet cannot initiate traffic or lateral movement into the internal LAN.
             - Navigate to Firewall > Rules and select the DMZ tab.
-            -Add a new blocking rule at the top of the ruleset:
+            - Add a new blocking rule at the top of the ruleset:
                 - Action: Block
                 - Interface: DMZ
                 - Address Family: IPv4
@@ -40,6 +40,16 @@ Verification: Check the firewall rule order on the DMZ tab to ensure the explici
                 - Destination: x.x.x.x (Apache-DMZ static IP)
                 - Destination Port Range: SSH (22) / HTTPS(443)
                 - Description: Allow LAN Management to Apache-DMZ.
-                - ClickSave and Apply Changes.
-        
-Verification: Run a test connection or curl [http://x.x.x.x](http://x.x.x.x) from a LAN workstation to verify that administrative web traffic successfully reaches the DMZ server.
+                - Click Save.
+
+        Write annother rule to allow Internal Lan Internet Access:
+                -Add a new pass rule:
+                - Action: Pass
+                - Interface: LAN
+                - Source: LAN net
+                - Destination: Any
+                - Destination Port Range: Any
+                - Description: Internet Access to Internal lan.
+                - Click Save and Apply Changes.        
+Verification: Run a test connection or curl [http://x.x.x.x]  # DMZ-ServerIP
+    (http://x.x.x.x) from a LAN workstation to verify that administrative web traffic successfully reaches the DMZ server. #DMZ-ServerIP
